@@ -1,0 +1,14 @@
+class PizzaDataModel {
+  final String id;
+  final String name;
+  final String description;
+  final int price;
+  final String imageUrl;
+  PizzaDataModel({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+  });
+}

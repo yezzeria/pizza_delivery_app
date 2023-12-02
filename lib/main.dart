@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_delivery_app/home/ui/home.dart';
+import 'package:pizza_delivery_app/views/home/ui/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.teal,
+        appBarTheme: AppBarTheme(
+            backgroundColor: Colors.white,
+            iconTheme: IconThemeData(color: Colors.teal)),
+        primaryColor: Colors.teal,
       ),
       home: const Home(),
     );
